@@ -1,0 +1,104 @@
+section {
+  margin: 20px;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+section #form-title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+section #contact-form {
+  width: 45%;
+  background-color: #f5f5f5;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 1rem;
+}
+
+/* Style labels for better readability */
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Style the text inputs and text area */
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the name fields to be on the same line */
+.name-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.name-group .first-name {
+  flex: 1;
+  margin-right: 1rem;
+}
+
+/* Style the phone input */
+.phone-container .phone-input {
+  display: flex;
+}
+
+.phone-container .phone-input input[type="text"] {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+/* Style the checkbox and label */
+.phone-container .phone-options {
+  display: flex;
+  align-items: center;
+}
+
+.phone-container .phone-options input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+/* Add validation styles for the phone input */
+input[type="number"]#phone {
+  flex: 1;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 0;
+}
+
+#checkbox {
+  margin-top: 0;
+}
+
+.phone-invalid {
+  border-color: #ff0000;
+}
+
+input[type="submit"] {
+  background-color: rgb(255, 172, 181);
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Add some hover effect to the submit button */
+input[type="submit"]:hover {
+  background-color: rgb(152, 127, 130);
+  color: white;
+}

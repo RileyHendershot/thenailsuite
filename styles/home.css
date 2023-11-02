@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+}
+
+#landing {
+  overflow: hidden;
+  height: 65vh;
+  color: white;
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+#landing {
+  overflow: hidden;
+  width: 100%;
+  height: 65vh;
+  position: relative;
+}
+
+#landing .slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  animation: slider 19.5s infinite;
+}
+
+#landing .slide:nth-child(1) {
+  background-image: url(../images/home/black-dots.jpg);
+  animation-delay: 0s;
+}
+
+#landing .slide:nth-child(2) {
+  background-image: url(../images/home/blue-waves.jpg);
+  animation-delay: -3.9s;
+}
+
+#landing .slide:nth-child(3) {
+  background-image: url(../images/home/pink-designs.jpg);
+  animation-delay: -7.8s;
+}
+
+#landing .slide:nth-child(4) {
+  background-image: url(../images/home/white-black-abstract.jpg);
+  animation-delay: -11.7s;
+}
+
+#landing .slide:nth-child(5) {
+  background-image: url(../images/home/orange-chrome.jpg);
+  animation-delay: -15.6s;
+}
+
+@keyframes slider {
+  0%,
+  15%,
+  100% {
+    opacity: 1;
+    animation-timing-function: ease;
+    z-index: 0;
+  }
+  20% {
+    opacity: 0;
+    animation-timing-function: step-end;
+    z-index: 0;
+  }
+  95% {
+    opacity: 1;
+    animation-timing-function: step-end;
+    z-index: -1;
+  }
+}
+
+#intro-content {
+  text-align: center;
+}
+
+#intro #intro-content h1 {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(225, 159, 167);
+  font-size: 8rem;
+  padding-bottom: 5rem;
+  margin-bottom: 5rem;
+  border-bottom: 3px solid rgb(225, 159, 167);
+}
+
+#intro-photo {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 5rem;
+  margin-bottom: 2rem;
+  height: 70vh;
+}
+
+#intro-content p {
+  width: 70%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 27px;
+}
+
+#certs {
+  text-align: center;
+}
+
+#certs h3 {
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
+  color: rgb(225, 159, 167);
+  font-size: 5rem;
+  padding-bottom: 5rem;
+  margin-bottom: 3rem;
+  border-bottom: 3px solid rgb(225, 159, 167);
+}
+
+#certs ul li {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  list-style-type: none;
+}

@@ -1,0 +1,21 @@
+#full {
+  text-align: center;
+  margin-top: 5rem;
+  width: 100%;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}
+
+#full h3 {
+  margin-top: 5rem;
+  margin-bottom: 2rem;
+  font-size: 5rem;
+}
+
+#full p {
+  font-size: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 0;
+  margin-bottom: 0;
+}

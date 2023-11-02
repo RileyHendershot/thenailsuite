@@ -1,0 +1,80 @@
+html {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 247, 247);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  background-color: rgb(255, 247, 247);
+}
+
+.header-logo {
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.navbar {
+  width: 100%;
+  padding-bottom: 1.5rem;
+}
+
+nav div ul li a {
+  font-size: 2rem;
+  color: rgb(150, 150, 150);
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+nav div ul li a.active {
+  border-bottom: 2px solid rgb(251, 209, 214);
+  color: rgb(251, 209, 214);
+}
+
+nav div ul li a:hover {
+  border-bottom: 2px solid rgb(251, 209, 214);
+  color: rgb(251, 209, 214);
+}
+
+h3 {
+  margin-top: 1.5rem;
+}
+
+footer {
+  background-color: rgb(248, 248, 248);
+  width: 100%;
+  padding: 20px;
+  bottom: 0;
+  margin-bottom: 0;
+  position: absolute;
+  bottom: 0;
+  height: 2.5rem;
+}
+
+footer #footer-table {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  align-items: center;
+}
+
+footer #footer-copy {
+  grid-column: 1;
+  text-align: right;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 2px solid rgb(251, 209, 214);
+  margin-top: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+#footer-table #footer-contact-info {
+  grid-column: 2;
+  font-size: 16px;
+  text-align: left;
+}
