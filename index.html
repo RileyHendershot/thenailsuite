@@ -12,35 +12,43 @@
     />
     <link href="./styles/styles.css" rel="stylesheet" />
     <link href="./styles/home.css" rel="stylesheet" />
+    <link href="./styles/mobile.css" rel="stylesheet" />
+    <script src="./scripts/hamburger.js" async></script>
   </head>
   <body>
-    <div class="header-logo">
-      <a href="index.html">
-        <img src="./images/logos/logo-footer.png" alt="the nail suite logo" />
-      </a>
-    </div>
-
-    <nav class="navbar justify-content-center">
-      <div id="nav-links">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="gallery.html">Gallery</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="book.html">Book Now</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="store.html">Store (Coming Soon)</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
-        </ul>
+    <header class="header">
+      <div class="header-logo">
+        <a href="index.html">
+          <img src="./images/logos/logo-footer.png" alt="the nail suite logo" />
+        </a>
       </div>
-    </nav>
+      <nav class="navbar justify-content-center">
+        <div id="nav-links">
+          <ul class="nav nav-menu">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="book.html">Book Now</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="store.html">Store (Coming Soon)</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
 
     <div id="landing">
       <div class="slide"></div>
@@ -69,7 +77,7 @@
         </div>
       </article>
       <div id="certs">
-        <h3>Certifications</h3>
+        <h2>Certifications</h2>
         <ul>
           <li>Cert 1</li>
           <li>Luminary Nail Systems</li>
@@ -81,7 +89,7 @@
       <div id="footer-table">
         <div id="copy">
           <p id="footer-copy">
-          &copy; 2023 The Nail Suite, LLC. All Rights Reserved.
+            &copy; 2023 The Nail Suite, LLC. All Rights Reserved.
           </p>
         </div>
         <div id="footer-contact-info">
@@ -89,7 +97,7 @@
             151 North State Street, Suite 151b, Morgan, Utah 84050
           </address>
         </div>
-        
+      </div>
     </footer>
   </body>
 </html>
