@@ -1,3 +1,4 @@
+/* Default styles for larger screens */
 section {
   margin: 20px;
   padding: 20px;
@@ -18,14 +19,12 @@ section #contact-form {
   border-radius: 1rem;
 }
 
-/* Style labels for better readability */
 label {
   display: block;
   margin-bottom: 5px;
   font-weight: bold;
 }
 
-/* Style the text inputs and text area */
 input[type="text"],
 input[type="email"],
 input[type="number"],
@@ -37,7 +36,6 @@ textarea {
   border-radius: 5px;
 }
 
-/* Style the name fields to be on the same line */
 .name-group {
   display: flex;
   justify-content: space-between;
@@ -48,7 +46,6 @@ textarea {
   margin-right: 1rem;
 }
 
-/* Style the phone input */
 .phone-container .phone-input {
   display: flex;
 }
@@ -61,7 +58,6 @@ textarea {
   margin-bottom: 15px;
 }
 
-/* Style the checkbox and label */
 .phone-container .phone-options {
   display: flex;
   align-items: center;
@@ -71,7 +67,6 @@ textarea {
   margin-right: 10px;
 }
 
-/* Add validation styles for the phone input */
 input[type="number"]#phone {
   flex: 1;
   border: 1px solid #ccc;
@@ -101,4 +96,11 @@ input[type="submit"] {
 input[type="submit"]:hover {
   background-color: rgb(152, 127, 130);
   color: white;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 767px) {
+  section #contact-form {
+    width: 100%; /* Make the form full width on smaller screens */
+  }
 }

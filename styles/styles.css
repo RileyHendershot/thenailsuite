@@ -16,11 +16,19 @@ section {
   border-radius: 5px;
 }
 
+.dropdown {
+  display: none;
+}
+
+header {
+  background-color: rgb(255, 233, 233);
+}
+
 .header-logo {
   text-align: center;
   width: 100%;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .navbar {
@@ -29,20 +37,20 @@ section {
 }
 
 nav div ul li a {
-  font-size: 2rem;
+  font-size: 1.33rem;
   color: rgb(150, 150, 150);
-  margin-left: 2rem;
-  margin-right: 2rem;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem;
 }
 
 nav div ul li a.active {
-  border-bottom: 2px solid rgb(251, 209, 214);
-  color: rgb(251, 209, 214);
+  border-bottom: 2px solid rgb(214, 168, 173);
+  color: rgb(214, 168, 173);
 }
 
 nav div ul li a:hover {
-  border-bottom: 2px solid rgb(251, 209, 214);
-  color: rgb(251, 209, 214);
+  border-bottom: 2px solid rgb(214, 168, 173);
+  color: rgb(214, 168, 173);
 }
 
 .header {
@@ -56,71 +64,45 @@ nav div ul li a:hover {
   padding: 1rem 1.5rem;
 }
 
-.hamburger {
-  display: none;
+ul #social {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  width: 2rem;
 }
 
-.bar {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010;
+#social svg {
+  height: 2rem;
+  width: 2rem;
 }
 
-@media only screen and (max-width: 768px) {
-  .nav {
-    position: fixed;
-    left: -100%;
-    top: 5rem;
-    flex-direction: column;
-    background-color: #fff;
-    width: 100%;
-    border-radius: 10px;
-    text-align: center;
-    transition: 0.3s;
-    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-  }
+ul #social a {
+  color: rgb(150, 150, 150);
+  margin-right: 0;
+  margin-left: 0;
+}
 
-  .nav.active {
-    left: 0;
-  }
-
-  .nav-item {
-    margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+ul #social a:hover {
+  border: none;
+  fill: rgb(214, 168, 173);
 }
 
 h1 {
-  font-size: 3rem;
+  font-size: 4rem;
+  font-family: Yesteryear;
+  color: rgb(225, 159, 167);
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
 }
 
 h3 {
-  font-size: 2rem;
+  font-size: 3rem;
   margin-top: 1.5rem;
+  font-family: Yesteryear;
+  color: rgb(225, 159, 167);
 }
 
 p {
@@ -128,7 +110,9 @@ p {
 }
 
 footer {
-  background-color: rgb(248, 248, 248);
+  position: relative;
+  background-color: rgb(255, 233, 233);
+  border-top: 2px solid rgb(224, 186, 190);
   width: 100%;
   padding: 20px;
   bottom: 0;
@@ -145,20 +129,71 @@ footer #footer-table {
 }
 
 footer #footer-copy {
+  font-size: 16px;
   grid-column: 1;
-  text-align: right;
+  text-align: center;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
-  border-top: 2px solid rgb(251, 209, 214);
-  margin-top: 1rem;
-  padding-top: 1rem;
   padding-bottom: 0;
-  margin-bottom: 0.5rem;
 }
 
 #footer-table #footer-contact-info {
   grid-column: 2;
   font-size: 16px;
-  text-align: left;
+  text-align: center;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 767px) {
+  .dropdown {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .dropdown button {
+    background-color: rgb(225, 159, 167);
+    border: none;
+    float: right;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .dropdown ul {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255, 233, 233);
+  }
+
+  .dropdown ul li a {
+    font-size: 1.33rem;
+    color: rgb(150, 150, 150);
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .dropdown ul li a.active {
+    border-bottom: 2px solid rgb(214, 168, 173);
+    color: rgb(214, 168, 173);
+  }
+
+  .dropdown ul li:hover {
+    color: rgb(214, 168, 173);
+    background-color: rgb(255, 233, 233);
+  }
+
+  .dropdown ul li a:hover {
+    border-bottom: 2px solid rgb(214, 168, 173);
+    color: rgb(214, 168, 173);
+    background-color: rgb(255, 233, 233);
+  }
+
+  header {
+    display: none;
+  }
 }

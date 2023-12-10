@@ -3,118 +3,147 @@ body {
 }
 
 #landing {
-  background-image: url("../images/home/black-dots2.jpg");
-  background-size: cover;
+  width: 100%;
+  height: calc(100vh - 14.35rem);
   overflow: hidden;
-  width: 100%;
-  height: 65vh;
   color: white;
-  /*position: relative;*/
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
+  overflow: hidden;
 }
 
-/* #landing .slide {
-  position: absolute;
-  top: 0;
-  left: 0;
+#landing img {
   width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  animation: slider 19.5s infinite;
 }
 
-#landing .slide:nth-child(1) {
-  background-image: url(../images/home/black-dots.jpg);
-  animation-delay: 0s;
-}
-
-#landing .slide:nth-child(2) {
-  background-image: url(../images/home/blue-waves.jpg);
-  animation-delay: -3.9s;
-}
-
-#landing .slide:nth-child(3) {
-  background-image: url(../images/home/pink-designs.jpg);
-  animation-delay: -7.8s;
-}
-
-#landing .slide:nth-child(4) {
-  background-image: url(../images/home/white-black-abstract.jpg);
-  animation-delay: -11.7s;
-}
-
-#landing .slide:nth-child(5) {
-  background-image: url(../images/home/orange-chrome.jpg);
-  animation-delay: -15.6s;
-}
-
-@keyframes slider {
-  0%,
-  15%,
-  100% {
-    opacity: 1;
-    animation-timing-function: ease;
-  }
-  20% {
-    opacity: 0;
-    animation-timing-function: step-end;
-  }
-  95% {
-    opacity: 1;
-    animation-timing-function: step-end;
-  }
-}
-*/
-
-#intro-content {
+#intro {
   text-align: center;
   margin-bottom: 5rem;
 }
 
-#intro #intro-content h1 {
+#intro h1 {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(225, 159, 167);
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
+  padding-bottom: 2rem;
+  margin-bottom: 3rem;
   border-bottom: 3px solid rgb(225, 159, 167);
+}
+
+#intro-content {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap to the next line if the container is too narrow */
+  gap: 2rem;
+  width: 65%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #intro-photo {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 0.5; /* Take up all available space in the flex container */
   border-radius: 5rem;
-  margin-bottom: 2rem;
-  height: 70vh;
+  margin-bottom: 1rem;
+  height: 50vh;
+  width: auto;
 }
 
 #intro-content p {
-  width: 70%;
-  text-align: left;
-  margin-left: auto;
-  margin-right: auto;
+  flex: 1;
+  width: 50%;
+  font-size: 1.25rem;
+  text-align: justify;
+  margin-top: 0.5rem;
 }
 
 #certs {
+  width: 65%;
+  margin: 5rem auto;
+  padding-bottom: 3rem;
+}
+
+#certs h1 {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(255, 247, 247);
+  color: rgb(225, 159, 167);
+  border-bottom: 3px solid rgb(225, 159, 167);
+  border-right: none;
+  border-left: none;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#certs p {
+  font-size: 1.25rem;
+  width: 90%;
+  text-align: justify;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#gallery-button {
+  width: 65%;
+  margin: 3rem auto;
   text-align: center;
 }
 
-#certs h2 {
-  width: 65%;
+#gallery-button h1 {
+  text-align: center;
+  width: 100%;
+  background-color: rgb(255, 247, 247);
+  color: rgb(225, 159, 167);
+  border-right: none;
+  border-left: none;
   margin-left: auto;
   margin-right: auto;
-  color: rgb(225, 159, 167);
-  padding-bottom: 5rem;
-  margin-bottom: 5rem;
-  border-bottom: 3px solid rgb(225, 159, 167);
 }
 
-#certs ul li {
-  font-size: 2rem;
-  margin-bottom: 5rem;
-  padding-bottom: 2rem;
-  list-style-type: none;
+#gallery-button button {
+  background-color: rgb(255, 172, 181);
+  margin: 1rem auto;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#gallery-button button:hover {
+  background-color: rgb(152, 127, 130);
+  color: white;
+}
+
+/* Media Query for Mobile */
+@media screen and (max-width: 767px) {
+  #landing {
+    width: 100%;
+    height: 33vh;
+    overflow: hidden;
+    color: white;
+    margin-bottom: 0rem;
+    overflow: hidden;
+  }
+
+  #landing img {
+    width: 100%;
+  }
+
+  section {
+    margin-top: 0;
+  }
+
+  #intro-content p {
+    font-size: 1.25rem;
+    width: 90%;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #certs button {
+    font-size: 80%;
+  }
+
+  #certs ul li {
+    font-size: 80%;
+  }
 }
